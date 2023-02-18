@@ -5,11 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="./image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 
 <body>
+    <div id="container">
+        <div id="btn-container">
+            <button class="btn start cursor">Start</button>
+            <button class="btn end cursor">End</button>
+            <button class="btn history cursor">History</button>
+        </div>
+        <div id="box-container">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+            <div id="div5"></div>
+            <div id="div6"></div>
+            <div id="div7"></div>
+            <div id="div8"></div>
+            <div id="div9"></div>
+        </div>
+        <div id="player-container">
+            <button class="btn pl1">Player 1 <i class="fa-solid fa-xmark"></i></button>
+            <button class="btn pl2">Player 2 <i class="fa-regular fa-circle"></i></button>
+        </div>
 
+        <!-- opacity -->
+
+        <div id="opacity"></div>
+
+    </div>
+
+
+    <audio controls autoplay></audio>
+
+    <!-- pop up -->
+
+    <div id="pop-up">
+        <p id="draw-condition">Game Draw</p>
+        <button>ok</button>
+    </div>
+
+    <!-- historyDiv -->
+
+    <div id="historyDiv">
+        <table>
+            <tr>
+                <th>Player 1</th>
+                <th>Player 2</th>
+            </tr>
+            <tr>
+                <td id="pl1">0</td>
+                <td id="pl2">0</td>
+            </tr>
+        </table>
+        <button>ok</button>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
+
 
 </html>
