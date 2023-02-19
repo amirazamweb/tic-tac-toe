@@ -9,21 +9,30 @@ body {
 
 #container {
     width: max-content;
-    background-color: #dff9fb;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 2.5rem;
     position: relative;
 }
 
 #opacity {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 398px;
+    left: -15px;
+    width: 110%;
+    height: 570px;
     background-color: #bdc3c7;
     opacity: 0.9;
     display: none;
+    border-radius: 5px;
+}
+
+#log {
+    width: 250px;
+    margin: auto;
+}
+
+#log img {
+    width: 100%;
 }
 
 #btn-container {
@@ -112,13 +121,14 @@ audio {
     background-color: #535c68;
     padding: 1rem 4rem;
     color: #ffffff;
+    border-radius: 5px;
     display: none;
 }
 
 #pop-up button {
     display: block;
     margin: auto;
-    padding: 0.2rem 0.4rem;
+    padding: 0.1rem 0.4rem;
     margin-top: 0.8rem;
     font-weight: bold;
     cursor: pointer;
@@ -131,17 +141,23 @@ audio {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #7ed6df;
-    padding: 1rem 3.5rem;
+    background-color: #535c68;
+    padding: 1rem;
     color: #be2edd;
     box-sizing: border-box;
     display: none;
+    border-radius: 5px;
+}
+
+#historyDiv table {
+    width: 250px;
+
 }
 
 #historyDiv table,
 th,
 td {
-    border: 2px solid #535c68;
+    border: 2px solid red;
     border-collapse: collapse;
     padding: 1rem;
     text-align: center;
@@ -154,8 +170,35 @@ td {
 #historyDiv button {
     display: block;
     margin: auto;
-    padding: 0.2rem 0.4rem;
-    margin-top: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    margin-top: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* media query */
+
+@media screen and (max-width: 480px) {
+    #pop-up {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #535c68;
+        padding: 1rem;
+        width: 150px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 5px;
+        display: none;
+    }
+
+    #pop-up button {
+        display: block;
+        margin: auto;
+        padding: 0.1rem 0.4rem;
+        margin-top: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }
