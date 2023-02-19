@@ -186,6 +186,7 @@ td {
     }
 
     #pop-up {
+        top: 45%;
         padding: 1rem;
         width: 150px;
         text-align: center;
@@ -193,6 +194,5 @@ td {
 
     #historyDiv {
         top: 45%;
-        transform: translate(-50%, -50%);
     }
 }
