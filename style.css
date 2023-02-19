@@ -190,4 +190,9 @@ td {
         width: 150px;
         text-align: center;
     }
+
+    #historyDiv {
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
 }
