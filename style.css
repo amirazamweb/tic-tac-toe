@@ -179,26 +179,14 @@ td {
 /* media query */
 
 @media screen and (max-width: 480px) {
+
+    #container {
+        margin-top: 3.5rem;
+    }
+
     #pop-up {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #535c68;
         padding: 1rem;
         width: 150px;
         text-align: center;
-        color: #ffffff;
-        border-radius: 5px;
-        display: none;
-    }
-
-    #pop-up button {
-        display: block;
-        margin: auto;
-        padding: 0.1rem 0.4rem;
-        margin-top: 0.8rem;
-        font-weight: bold;
-        cursor: pointer;
     }
 }
