@@ -13,10 +13,10 @@
 
 #opacity {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: -15px;
     width: 110%;
-    height: 570px;
+    height: 540px;
     background-color: #bdc3c7;
     opacity: 0.9;
     display: none;
